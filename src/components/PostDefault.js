@@ -29,19 +29,19 @@ function Post(props) {
   return (
     <div className="post_container">
       <div className="header_container">
-        <img className="photo" src={props.nickImg} />
-        <div className="header_nick">{props.nickname}</div>
+        <img className="photo" src={nickImg} />
+        <div className="header_nick">{nickname}</div>
         <button
           type="button"
-          onClick={() => dispatch(deletePost(props.id))}
+          onClick={() => dispatch(deletePost(id))}
           className="btn-delete"
         >
           X
         </button>
       </div>
       <div className="content_container">
-        <div className="content_text">{props.text}</div>
-        <img className="photo1" src={props.link} />
+        <div className="content_text">{text}</div>
+        <img className="photo1" src={link} />
       </div>
 
       <div className="foter_container">
