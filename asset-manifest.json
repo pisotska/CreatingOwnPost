@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CreatingOwnPost/static/css/main.53e63164.css",
+    "main.js": "/CreatingOwnPost/static/js/main.5ac850be.js",
+    "index.html": "/CreatingOwnPost/index.html",
+    "main.53e63164.css.map": "/CreatingOwnPost/static/css/main.53e63164.css.map",
+    "main.5ac850be.js.map": "/CreatingOwnPost/static/js/main.5ac850be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53e63164.css",
+    "static/js/main.5ac850be.js"
+  ]
+}
