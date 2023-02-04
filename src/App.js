@@ -11,13 +11,7 @@ function App() {
       <Input />
       <div className="displayPosts">
         {postList.map((item) => (
-          <Post
-            text={item.text}
-            link={item.link}
-            id={item.id}
-            nickname={item.nickname}
-            nickImg={item.nickImg}
-          />
+          <Post {...item} />
         ))}
       </div>
     </div>

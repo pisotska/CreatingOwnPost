@@ -7,7 +7,7 @@ const Input = () => {
   const [inputName, setInputName] = useState("");
   const [inputLink, setInputLink] = useState("");
 
-  const [selectValue = "karatusia", setSelectValue] = useState();
+  const [selectValue, setSelectValue] = useState("karatusia");
   const nickImage = {
     karatusia: {
       img: "https://d16u9y6cg00afk.cloudfront.net/mofu_cats_first/40402.512.webp",
@@ -17,6 +17,18 @@ const Input = () => {
     },
   };
   const photoNick = nickImage[selectValue].img;
+
+  const addNewPost = () => {
+    dispatch(
+      addPost({
+        text: inputName,
+        link: inputLink,
+        id: Date.now(),
+        nickname: selectValue,
+        nickImg: photoNick,
+      })
+    );
+  };
 
   const dispatch = useDispatch();
 
@@ -46,21 +58,7 @@ const Input = () => {
         placeholder="image link"
         className="input-link"
       ></input>
-      <button
-        type="button"
-        onClick={() => {
-          dispatch(
-            addPost({
-              text: inputName,
-              link: inputLink,
-              id: Date.now(),
-              nickname: selectValue,
-              nickImg: photoNick,
-            })
-          );
-        }}
-        className="btn-add"
-      >
+      <button type="button" onClick={addNewPost} className="btn-add">
         Add
       </button>
     </form>
