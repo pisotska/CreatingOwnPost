@@ -40,7 +40,7 @@ function Post(props) {
         </button>
       </div>
       <div className="content_container">
-        <div className="content_text">{text}</div>
+        <div className="content_text"></div>
         <img className="photo1" src={link} />
       </div>
 
